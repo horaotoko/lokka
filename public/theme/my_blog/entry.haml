@@ -1,21 +1,21 @@
 %article
-  .info
-    %ul.date
-      %li.month= @entry.created_at.strftime("%b")
-      %li.day= @entry.created_at.day
-      %li.year= @entry.created_at.year
-    - unless @entry.category.nil?
-      %p.category
-        %a{:href => url(@entry.category.link)}= @entry.category.title
-    - unless @entry.tags.size.zero?
-      = @post.tags_to_html
-    - if logged_in?
-      .edit
-        %a{:href => url(@entry.edit_link)}= t('edit')
+  .tape
   %header
+    %ul.date
+      %li.year= @entry.created_at.year
+      %li.month= @entry.created_at.strftime("%m")
+      %li.day= @entry.created_at.day
     %h1= @entry.title
+  - unless @entry.category.nil?
+    %p.category
+      %a{:href => url(@entry.category.link)}= @entry.category.title
+  - unless @entry.tags.size.zero?
+    = @post.tags_to_html
   .body
     = @entry.body
+  - if logged_in?
+    .edit
+      %a{:href => url(@entry.edit_link)}= t('edit')
 - unless page?
   %section.comments
     %h1.comment Comments
