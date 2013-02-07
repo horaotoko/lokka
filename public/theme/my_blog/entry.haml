@@ -13,6 +13,8 @@
     = @post.tags_to_html
   .body
     = @entry.body
+    = hatena_bookmark_button(@entry.title)
+    = tweet_button(@entry.title, "url(entry.link)")
   - if logged_in?
     .edit
       %a{:href => url(@entry.edit_link)}= t('edit')
