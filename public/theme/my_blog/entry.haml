@@ -14,7 +14,7 @@
   .body
     = @entry.body
     = hatena_bookmark_button(@entry.title)
-    = tweet_button(@entry.title, "url(entry.link)")
+    = tweet_button(@entry.title)
   - if logged_in?
     .edit
       %a{:href => url(@entry.edit_link)}= t('edit')
