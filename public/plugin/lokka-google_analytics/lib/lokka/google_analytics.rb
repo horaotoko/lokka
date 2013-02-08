@@ -9,7 +9,7 @@ module Lokka
         Option.tracker = params['tracker']
         Option.tracker_dn = params['tracker_dn']
         flash[:notice] = 'Updated.'
-        redirect to('/admin/plugins/google_analytics')
+        redirect '/admin/plugins/google_analytics'
       end
 
       app.before do
