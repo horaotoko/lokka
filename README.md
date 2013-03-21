@@ -1,4 +1,5 @@
 lokka
 =====
 
-This repos is moved
+This repos moved to lokka organization.
+New repos is [here](http://github.com/lokka/lokka)
