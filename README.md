@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lokka [<img src="https://secure.travis-ci.org/komagata/lokka.png"/>](http://travis-ci.org/komagata/lokka)
 
 CMS written in Ruby for cloud computing.
@@ -92,3 +93,10 @@ public/plugin/lokka-hello/lib/lokka/hello.rb:
 ## Copyright
 
 Copyright (c) 2010 Masaki Komagata. See LICENSE for details.
+=======
+lokka
+=====
+
+This repos moved to lokka organization.
+New repos is [here](http://github.com/lokka/lokka)
+>>>>>>> 34b0e65550d5085cc67127bf225c121935febd61
